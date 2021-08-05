@@ -2,15 +2,15 @@ package main
 
 import (
 	"fruit-eudemon/meican"
-	"github.com/sirupsen/logrus"
+	"fruit-eudemon/rlog"
 	"time"
 )
 
 func main() {
 	var ch chan int
-	logrus.Info("hello, 新鲜水果开始抓取程序")
+	rlog.Info("hello, 新鲜水果开始抓取程序", nil)
 	//定时任务
-	ticker := time.NewTicker(time.Second * 5)
+	ticker := time.NewTicker(time.Second * 15)
 	go func() {
 		for range ticker.C {
 			meican.DoTask()
