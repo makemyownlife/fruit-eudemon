@@ -1,0 +1,5 @@
+package meican
+
+func DoTask() {
+
+}
