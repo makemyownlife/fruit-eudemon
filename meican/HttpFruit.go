@@ -25,8 +25,8 @@ func LoginCheck() {
 	response, err := req.Post("https://meican.com/preference/preorder/api/v2.0/oauth/token", map[string]interface{}{
 		"grant_type":             "password",
 		"meican_credential_type": "password",
-		"password":               "Ilxw@19841201",
-		"username":               "yongzhang21@iflytek.com",
+		"password":               "",
+		"username":               "",
 		"username_type":          "username",
 		"remember":               "true",
 		//需要携带clientId 否则后端会返回错误
